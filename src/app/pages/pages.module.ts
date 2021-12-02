@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
+import { UserComponent } from './components/user/user.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    UserComponent
+  ],
   imports: [
     CommonModule,
     PagesRoutingModule

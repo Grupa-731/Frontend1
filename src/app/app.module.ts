@@ -8,6 +8,7 @@ import { FeedbackPageComponent } from './pages/components/feedback-page/feedback
 import { FeedbackListComponent } from './pages/components/feedback-list/feedback-list.component';
 import { RequestFeedbackComponent } from './pages/components/request-feedback/request-feedback.component';
 import {LoginModule} from "./login/login.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {LoginModule} from "./login/login.module";
   ],
   imports: [
     BrowserModule,
-    LoginModule
+    LoginModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
