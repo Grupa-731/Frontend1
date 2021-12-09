@@ -1,1 +1,19 @@
-<p>feedback-list works!</p>
+<div style="position: absolute; top: 15%; right: 20%; width: 30%; height: 25%">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width: 100%; height: 100%; ">
+
+    <ng-container matColumnDef="pegID">
+      <th mat-header-cell *matHeaderCellDef> PEG ID</th>
+      <td mat-cell *matCellDef="let element"> {{element.pegID}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef> Status</th>
+      <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
