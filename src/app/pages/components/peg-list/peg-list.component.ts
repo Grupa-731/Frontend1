@@ -12,11 +12,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 ];
 
 @Component({
-  selector: 'app-feedback-list',
-  templateUrl: './feedback-list.component.html'
-  /*styleUrls: ['./feedback-list.component.scss']*/
+  selector: 'app-peg-list',
+  templateUrl: './peg-list.component.html'
+  /*styleUrls: ['./peg-list.component.scss']*/
 })
-export class FeedbackListComponent implements OnInit {
+export class PegListComponent implements OnInit {
 
   constructor() {
   }

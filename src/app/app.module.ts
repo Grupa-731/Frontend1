@@ -4,23 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/components/login/login.component';
 import { NavbarComponent } from './pages/components/navbar/navbar.component';
-import { FeedbackPageComponent } from './pages/components/feedback-page/feedback-page.component';
-import { FeedbackListComponent } from './pages/components/feedback-list/feedback-list.component';
-import { RequestFeedbackComponent } from './pages/components/request-feedback/request-feedback.component';
+import { PegPageComponent } from './pages/components/peg-page/peg-page.component';
+import { PegListComponent } from './pages/components/peg-list/peg-list.component';
+import { RequestPegComponent } from './pages/components/request-peg/request-peg.component';
 import {LoginModule} from "./login/login.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
 import {MatTableModule} from "@angular/material/table";
+import {AppRoutingModule} from "./app-routing.module";
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FeedbackPageComponent,
-    FeedbackListComponent,
-    RequestFeedbackComponent
+    PegPageComponent,
+    PegListComponent,
+    RequestPegComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import {MatTableModule} from "@angular/material/table";
     MatButtonModule,
     MatInputModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
