@@ -2,14 +2,14 @@
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width: 100%; height: 100%; ">
 
     <ng-container matColumnDef="pegID">
-      <th mat-header-cell *matHeaderCellDef> PEG ID</th>
-      <td mat-cell *matCellDef="let element"> {{element.pegID}} </td>
+      <th mat-header-cell *matHeaderCellDef style="font-size: 20px"> PEG ID</th>
+      <td mat-cell *matCellDef="let element" style="font-size: 16px"> {{element.pegID}} </td>
     </ng-container>
 
 
     <ng-container matColumnDef="status">
-      <th mat-header-cell *matHeaderCellDef> Status</th>
-      <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+      <th mat-header-cell *matHeaderCellDef style="font-size: 20px"> Status</th>
+      <td mat-cell *matCellDef="let element" style="font-size: 16px"> {{element.status}} </td>
     </ng-container>
 
 

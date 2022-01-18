@@ -14,6 +14,7 @@ import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
 import {MatTableModule} from "@angular/material/table";
 import {AppRoutingModule} from "./app-routing.module";
+import {PagesModule} from "./pages/pages.module";
 
 
 @NgModule({
@@ -24,16 +25,17 @@ import {AppRoutingModule} from "./app-routing.module";
     PegListComponent,
     RequestPegComponent
   ],
-  imports: [
-    BrowserModule,
-    LoginModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatInputModule,
-    MatSelectModule,
-    MatTableModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        LoginModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatInputModule,
+        MatSelectModule,
+        MatTableModule,
+        AppRoutingModule,
+        PagesModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
