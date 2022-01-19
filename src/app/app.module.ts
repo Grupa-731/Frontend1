@@ -18,13 +18,16 @@ import {PagesModule} from "./pages/pages.module";
 import { ManagerComponent } from './pages/components/manager/manager.component';
 import { AddUserComponent } from './pages/components/add-user/add-user.component';
 import {MatDividerModule} from "@angular/material/divider";
-import { RequestFeedbackComponent } from './pages/components/request-feedback/request-feedback.component';
+import {DialogContent, RequestFeedbackComponent} from './pages/components/request-feedback/request-feedback.component';
 import { FeedbackPageComponent } from './pages/components/feedback-page/feedback-page.component';
 import {RouterModule, Routes} from "@angular/router";
 import {LoginGuard} from "./login/guards/login-guard";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatIconModule} from "@angular/material/icon";
+import { NgxStarRatingModule } from 'ngx-star-rating';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatDialogModule} from "@angular/material/dialog";
 
 const routes: Routes = [
 /*  // {
@@ -49,7 +52,8 @@ const routes: Routes = [
     ManagerComponent,
     AddUserComponent,
     RequestFeedbackComponent,
-    FeedbackPageComponent
+    FeedbackPageComponent,
+    DialogContent
   ],
   imports: [
     BrowserModule,
@@ -66,11 +70,16 @@ const routes: Routes = [
     RouterModule,
     MatCheckboxModule,
     MatTooltipModule,
-    MatIconModule
+    MatIconModule,
+    NgxStarRatingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    DialogContent
   ],
   bootstrap: [AppComponent]
 })

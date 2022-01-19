@@ -15,15 +15,44 @@
   </p>
   <section style="margin-left: -215px">
     <p>
-      <mat-checkbox>Anonymous</mat-checkbox>
+      <mat-checkbox style="font-size: 18px">Anonymous</mat-checkbox>
     </p>
   </section>
   <br>
-
+  <form [formGroup]="form">
+    <label style="font-size: 20px">Technical</label>
+    <br>
+    <br>
+    <ngx-star-rating formControlName="rating1" [id]="'rating1'"></ngx-star-rating>
+    <div>Rating: {{form.value.rating1}}</div>
+  </form>
+  <br>
+  <br>
+  <br>
+  <form [formGroup]="form">
+    <label style="font-size: 20px">Soft skills</label>
+    <br>
+    <br>
+    <ngx-star-rating formControlName="rating2" [id]="'rating2'"></ngx-star-rating>
+    <div>Rating: {{form.value.rating2}}</div>
+  </form>
+  <br>
+  <br>
+  <br>
+  <form [formGroup]="form">
+    <label style="font-size: 20px">Teamwork skills</label>
+    <br>
+    <br>
+    <ngx-star-rating formControlName="rating3" [id]="'rating3'"></ngx-star-rating>
+    <div>Rating: {{form.value.rating3}}</div>
+  </form>
   <p>
     <br>
-    <button mat-button style="font-size: 20px; width: 320px; height: 50px; background-color: #5F765D; color: white">
-      Request new PEG
+    <br>
+    <br>
+    <br>
+    <button (click)="openDialog()" mat-button style="font-size: 20px; width: 320px; height: 50px; background-color: #5F765D; color: white">
+      Request new Feedback
     </button>
   </p>
 
