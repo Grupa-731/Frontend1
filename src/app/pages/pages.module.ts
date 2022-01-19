@@ -6,7 +6,9 @@ import {MatButtonModule} from '@angular/material/button';
 
 
 
+/*
 import { PagesRoutingModule } from './pages-routing.module';
+*/
 import { UserComponent } from './components/user/user.component';
 import {MatChipsModule} from "@angular/material/chips";
 
@@ -20,7 +22,7 @@ import {MatChipsModule} from "@angular/material/chips";
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule,
+    /*PagesRoutingModule*/
     MatCardModule,
     MatButtonModule,
     MatListModule,
